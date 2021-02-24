@@ -38,7 +38,7 @@ The new way to read the news without being confused with overwhelming details.
 
 ### Built With
 
-* [Ionic Framwork](https://github.com/ionic-team/ionic-framework)
+* [Ionic Framework](https://github.com/ionic-team/ionic-framework)
 * [Typescript](https://github.com/microsoft/TypeScript)
 * [Love](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
