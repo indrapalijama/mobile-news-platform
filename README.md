@@ -86,20 +86,17 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
 * [Berita Indo API](https://github.com/satyawikananda/berita-indo-api)
 * [Readme Template](https://github.com/othneildrew/Best-README-Template)
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
