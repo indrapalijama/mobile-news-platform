@@ -1,0 +1,12 @@
+/* Set the width to the full container and center the content */
+ion-select {
+    width: 100%;
+
+    justify-content: center;
+}
+
+/* Set the flex in order to size the text width to its content */
+ion-select::part(placeholder),
+ion-select::part(text) {
+    flex: 0 0 auto;
+}

@@ -1,0 +1,80 @@
+ion-tab-button:hover {
+    ion-icon,
+    ion-label {
+        color: #c92e3f !important;
+        --ion-color-base: white !important;
+    }
+}
+
+ion-tab-bar {
+    --border: 0;
+    --background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    &:after {
+        content: " ";
+        width: 100%;
+        bottom: 0;
+        height: env(safe-area-inset-bottom);
+        position: absolute;
+    }
+    ion-tab-button {
+        --background: #2c2c2c;
+        --color: #fff;
+    }
+
+    ion-tab-button.comments {
+        margin-right: 0px;
+        border-top-right-radius: 18px;
+    }
+    ion-tab-button.notifs {
+        margin-left: 0px;
+        border-top-left-radius: 18px;
+    }
+    svg {
+        width: 72px;
+        margin-top: 19px;
+        path {
+            fill: #2c2c2c;
+        }
+    }
+
+    .tab-selected ion-icon {
+        color: white;
+        padding-bottom: 9px;
+    }
+
+    #tab-button-home > ion-icon:after,
+    #tab-button-search > ion-icon:after,
+    #tab-button-bookmark > ion-icon:after,
+    #tab-button-account > ion-icon:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 7px;
+        position: absolute;
+        transition: width 0.4s ease 0s, background-color 0.4s ease;
+        width: 0;
+        border-radius: 5px;
+    }
+
+    #tab-button-home.tab-selected > ion-icon:after,
+    #tab-button-search.tab-selected > ion-icon:after,
+    #tab-button-bookmark.tab-selected > ion-icon:after,
+    #tab-button-account.tab-selected > ion-icon:after {
+        width: 30px;
+        background: #da0202;
+    }
+
+    .keyboard-is-open .tabbar {
+        display: none;
+    }
+
+    .keyboard-is-open scroll-content {
+        margin-bottom: 0 !important;
+    }
+}

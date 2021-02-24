@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title>
+            Settings
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-buttons (click)="close()" slot="end">
+                <ion-icon color="danger" style="font-size: 30px !important;" name="close-circle">
+                </ion-icon>
+            </ion-buttons>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>News Provider</ion-label>
+        <ion-select [(ngModel)]="newsprovider" mode="ios" placeholder="Select Provider" [compareWith]="compareFn"
+            (ionChange)="onChangeProvider(newsprovider)">
+            <ion-select-option *ngFor="let newsprovider of provider" [value]="newsprovider">
+                {{newsprovider}}
+            </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item *ngIf="newsprovider">
+        <ion-label>Category</ion-label>
+        <ion-select [(ngModel)]="categorylist" mode="ios" placeholder="Select Category" [compareWith]="compareFn"
+            (ionChange)="onChangeCategory(categorylist)">
+            <ion-select-option *ngFor="let categorylist of category" [value]="categorylist">
+                {{categorylist}}
+            </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-row class=" ion-align-items-center ion-no-padding  ion-padding-horizontal">
+        <ion-col class="ion-text-center ">
+            <!-- disabled={{!categorylist}} -->
+            <ion-button disabled={{!newsprovider}} class=" default-button  ion-margin-bottom" expand="block"
+                (click)="applyFilter(filtervalue)">
+                Apply
+            </ion-button>
+        </ion-col>
+        <!-- <ion-col class="ion-text-center ">
+            <ion-button class="ion-text-capitalize default-button gray-button  ion-margin-bottom text-color-semi-black"
+                expand="block" (click)="reset()">
+                Reset
+            </ion-button>
+        </ion-col> -->
+    </ion-row>
+</ion-content>

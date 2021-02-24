@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
+import { SettingsPage } from './settings-overflow/settings';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { SharedModule } from '@news/shared/shared.module';
 
 
 @NgModule({
@@ -12,8 +14,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    SharedModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    SettingsPage
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }
