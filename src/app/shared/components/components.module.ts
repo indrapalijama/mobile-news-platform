@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
 import { SkeletonLoaderModule } from "./skeleton-loader/skeleton-loader.module";
+import { DefaultPageModule } from "./default-page/default-page.module";
 
 @NgModule({
     declarations: [],
@@ -11,10 +12,12 @@ import { SkeletonLoaderModule } from "./skeleton-loader/skeleton-loader.module";
         IonicModule,
         FormsModule,
         SkeletonLoaderModule,
+        DefaultPageModule,
         ReactiveFormsModule
     ],
     exports: [
-        SkeletonLoaderModule
+        SkeletonLoaderModule,
+        DefaultPageModule
     ]
 })
 export class ComponentsModule { }

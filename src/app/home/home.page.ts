@@ -37,6 +37,7 @@ export class HomePage implements OnInit {
       });
 
     modal.onDidDismiss().then(modal => {
+      this.data.splice(0, this.data.length)
       this.loader = true;
       if (modal.role == 'apply' && modal.data != '') {
         this.header = modal.data.header;

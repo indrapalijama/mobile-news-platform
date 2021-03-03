@@ -1,17 +1,18 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { IonicModule } from "@ionic/angular";
-import { SkeletonCard } from "./skeleton-card/card.component";
+import { MaintenanceComponent } from "./maintenance/maintenance.component";
+
 @NgModule({
     declarations: [
-        SkeletonCard
+        MaintenanceComponent
     ],
     imports: [
         CommonModule,
         IonicModule
     ],
     exports: [
-        SkeletonCard
+        MaintenanceComponent
     ]
 })
-export class SkeletonLoaderModule { }
+export class DefaultPageModule { }

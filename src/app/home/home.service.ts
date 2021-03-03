@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router, NavigationExtras } from '@angular/router';
-import { AlertController, NavController } from '@ionic/angular';
-// import { MessageHelper, LoadingService } from '@aax/shared';
 import { map } from 'rxjs/operators';
 import { environment } from '@environments/environment';
 
@@ -10,7 +7,7 @@ import { environment } from '@environments/environment';
     providedIn: 'root'
 })
 export class HomeService {
-    urlpath = environment.urlpath; //api aax
+    urlpath = environment.urlpath;
     quitOnBackButton = false;
 
     constructor(
