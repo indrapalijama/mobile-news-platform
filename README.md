@@ -38,7 +38,7 @@ The new way to read the news without being confused with overwhelming details.
 
 ### Built With
 
-* [Ionic Framwork](https://github.com/ionic-team/ionic-framework)
+* [Ionic Framework](https://github.com/ionic-team/ionic-framework)
 * [Typescript](https://github.com/microsoft/TypeScript)
 * [Love](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
@@ -86,20 +86,17 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
 * [Berita Indo API](https://github.com/satyawikananda/berita-indo-api)
 * [Readme Template](https://github.com/othneildrew/Best-README-Template)
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
