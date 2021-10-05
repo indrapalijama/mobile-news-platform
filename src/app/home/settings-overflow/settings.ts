@@ -31,6 +31,7 @@ export class SettingsPage implements OnInit {
         private loading: LoadingService
     ) {
         this.service.getAllCategory().subscribe(res => {
+            console.log('halo', res)
             this.provider = [];
             this.data = res.listApi;
             for (var key in this.data) {
@@ -49,6 +50,7 @@ export class SettingsPage implements OnInit {
     }
 
     async onChangeProvider(val: string) {
+        this.categorylist = await null
         await this.category.splice(0, this.category.length)
         this.headervalue = await val;
         this.filtervalue = await val.toLowerCase().replace(' ', '-');

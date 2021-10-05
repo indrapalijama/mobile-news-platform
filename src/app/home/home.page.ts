@@ -12,6 +12,7 @@ export class HomePage implements OnInit {
   data = [];
   dataRender: boolean = false;
   loader: boolean = false;
+  differentCallback: boolean = false;
 
   header: string = 'Home';
   providervalue;
@@ -43,8 +44,15 @@ export class HomePage implements OnInit {
         this.header = modal.data.header;
         this.providervalue = modal.data.provider;
         this.categoryvalue = modal.data.category;
+
+        var substrings = ["tempo", "okezone"];
+        if (substrings.some(function (v) { return modal.data.header.toLowerCase().indexOf(v) >= 0; })) {
+          this.differentCallback = true
+        }
+
         this.service.getSpecificNews(modal.data.url).subscribe(value => {
           if (value.code == 200) {
+            console.log('value data', value.data)
             this.data = value.data;
             this.dataRender = true;
             this.loader = false;
